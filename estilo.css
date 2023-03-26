@@ -1,9 +1,9 @@
 @charset "UTF-8";
-/** MIXINS GENÉRICOS **/
+/* MIXINS GENÉRICOS */
 /* ANCHO Y ALTURA */
 /* DISPLAY FLEX */
 /* FUENTE */
-/** VARIABLES GENÉRICAS **/
+/* VARIABLES GENÉRICAS */
 /* COLORES */
 /* FUENTES */
 /* RESET */
@@ -63,13 +63,7 @@
   color: #ffffff;
 }
 .navegacionPrincipal ul li a:active {
-  text-decoration: underline;
-}
-.navegacionPrincipal ul li:hover {
-  background-color: #274442;
-}
-.navegacionPrincipal ul li:active {
-  background-color: #274442;
+  color: #e9e5e3;
 }
 
 /* MAIN */
@@ -79,13 +73,9 @@
 
 /* FOOTER */
 .footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   grid-row: 3;
-  background-color: #a3bab4;
-  margin-top: 10%;
-  padding-bottom: 10%;
+  display: inline-block;
+  position: relative;
 }
 .footer td {
   text-align: left;
@@ -94,7 +84,6 @@
 .logoImagen {
   width: 180px;
   height: 161px;
-  margin-left: 10%;
   animation-name: aparecer;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -108,14 +97,9 @@
     opacity: 1;
   }
 }
-.infoFooter {
-  margin-left: 10%;
-}
-
 .icono {
   width: 15px;
   height: 15px;
-  border-radius: 25px;
 }
 
 /* TITULOS Y TEXTOS*/
@@ -129,15 +113,6 @@ h1 {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-h1:hover {
-  color: #e9e5e3;
-  background-color: #a3bab4;
-}
-
-h1:active {
-  text-decoration: underline;
 }
 
 h2 {
@@ -166,7 +141,7 @@ h3 {
 h4 {
   font-size: 1rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: #333333;
+  color: #748e81;
   background-color: none;
   position: relative;
   text-align: left;
@@ -194,7 +169,7 @@ p {
 /** INDEX **/
 /* VIDEO PRESENTACION */
 #logoVideo {
-  width: 100%;
+  width: 100vw;
   height: 300px;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -261,7 +236,6 @@ p {
   list-style-type: none;
   text-align: center;
   font-size: 0;
-  border-radius: 20px;
 }
 .navegacionSecundaria li a {
   display: block;
@@ -271,12 +245,6 @@ p {
   color: #ffffff;
   border-color: #ffffff;
   border-width: 10rem;
-}
-.navegacionSecundaria li a:hover {
-  background-color: #748e81;
-}
-.navegacionSecundaria li a:active {
-  text-decoration: underline;
 }
 
 .navegacionSecundaria > ul li {
@@ -305,12 +273,11 @@ p {
 .prendas a {
   display: block;
   align-self: center;
-  margin-top: 2%;
-  border-radius: 25px;
+  padding-top: 0.3rem;
 }
 .prendas a:hover {
   font-size: auto;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: auto;
   color: #ffffff;
   background-color: #274442;
 }
@@ -319,7 +286,7 @@ p {
   align-self: center;
 }
 
-/** AGENDA **/
+/** CONTACTO **/
 /* FORMULARIO */
 .formularioAgenda {
   display: block;
@@ -328,50 +295,11 @@ p {
   padding-bottom: 10px;
 }
 
-/** CONTACTO **/
-/* MAPA */
-.mapa {
-  display: flex;
-  justify-content: center;
-}
-.mapa iframe {
-  width: 90vw;
-  height: 450px;
-}
-
-.red {
-  display: flex;
-  flex-direction: row;
-  margin-left: 20%;
-  margin-top: 1%;
-}
-.red a {
-  margin-left: 1%;
-  margin-top: 1%;
-}
-
-.iconoGrande {
-  width: 30px;
-  height: 30px;
-  border-radius: 25px;
-}
-
 /* CAMBIOS PARA PANTALLA MONITOR */
 @media (min-width: 576px) {
   /* MENU PRINCIPAL */
   .navegacionPrincipal ul li {
     display: inline-block;
-  }
-  /* FOOTER */
-  .footer {
-    grid-template-columns: 1fr 3fr;
-  }
-  .logoImagen {
-    grid-column: 1;
-  }
-  .infoFooter {
-    grid-column: 2;
-    margin-top: 2%;
   }
   /*** ESPECIFICOS POR PAGINA ***/
   /** MISION **/
